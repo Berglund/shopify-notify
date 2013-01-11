@@ -6,8 +6,7 @@ This simple script catches a Shopify 'Order Creation' web hook and prints `New 2
 Installing the shopify-notify script takes three steps:
 
 #### Shopify Web Hook
-Add a new JSON Web Hook for "Order Creation" in Shopify settings
-Make it point to your hubot instance: `http://myhubot.herokuapp.com/shopify/order_creation`
+Add a new JSON Web Hook for "Order Creation" in Shopify settings. Make it point to your hubot instance: `http://myhubot.herokuapp.com/shopify/order_creation`
 
 #### Heroku environment variables
 shopify-notify looks for `HUBOT_SHOPIFY_NOTIFY_ROOM` to tell it which room to post the message in, so set it on Heroku using the Heroku Toolbelt:
