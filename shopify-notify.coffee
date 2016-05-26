@@ -19,7 +19,7 @@
 module.exports = (robot) ->
   robot.router.post "/shopify/order_creation", (req, res) ->
 
-    user = robot.userForId 'broadcast'
+    user = robot.brain.userForId 'broadcast'
     user.room = process.env.HUBOT_SHOPIFY_NOTIFY_ROOM
     user.type = 'groupchat'
 
